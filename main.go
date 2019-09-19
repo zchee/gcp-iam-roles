@@ -29,7 +29,7 @@ func main() {
 					title = title[:idx] + "\x1b[31m" + title[idx:idx+4] + "\x1b[0m" + title[idx+4:]
 				}
 				if idx := strings.Index(title, "Alpha"); idx > -1 {
-					title = title[:idx] + "\x1b[31m" + title[idx:idx+5] + "\x1b[0m" + title[idx+5:]
+					title = title[:idx] + "\x1b[31;1;4m" + title[idx:idx+5] + "\x1b[0m" + title[idx+5:]
 				}
 				role[1] = strings.TrimSuffix(title, "\n")
 				role[2] = e.ChildText("td.role-description")

@@ -57,6 +57,8 @@ endef
 # ----------------------------------------------------------------------------
 # targets
 
+.DEFAULT_GOAL = static
+
 ## build and install
 
 .PHONY: $(APP)
